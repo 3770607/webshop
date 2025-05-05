@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: #fff;
+	line-height: 1.6;
+}
+
+header {
+	background-color: rgb(229, 229, 229);
+	padding: 2rem;
+	text-align: center;
+}
+
+.text {
+	height: 40px;
+	width: 240px;
+/*	margin-left: 50px;*/
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.button {
+	height: 40px;
+	width: 80px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.divimg {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	/* 基準位置とする */
+	overflow: hidden;
+	/* はみ出た分を非表示 */
+}
+
+.divimg img {
+	position: absolute;
+	/* 相対位置とする */
+	top: 50%;   /* 上から50%の位置 */
+	left: 50%;	/* 左から50%の位置 */
+	transform: translate(-50%, -50%);
+	/* 画像のサイズの半分だけ位置を戻す */
+	width: 100%;
+	height: auto;
+}
+
+.prod {
+	display: inline-block;
+	margin-left: 50px;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
